@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run --reporter spec",
+    "test_syokichi": "echo \"Error: no test specified\" && exit 1",
+    "allure": "npx allure generate ./allure-results --clean && npx allure open ./allure-report"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +13,10 @@
   "description": "",
   "devDependencies": {
     "@testing-library/cypress": "^10.0.3",
+    "allure-commandline": "^2.32.2",
+    "allure-cypress": "^3.2.0",
     "cypress": "^14.0.3",
+    "dotenv": "^16.4.7",
     "typescript": "^5.7.3"
   }
 }

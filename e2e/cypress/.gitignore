@@ -1,3 +1,6 @@
 
 # Cypress
+.env
 node_modules/
+allure-report
+allure-results
